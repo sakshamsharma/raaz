@@ -1,0 +1,41 @@
+Source: haskell-raaz
+Section: libdevel
+Priority: optional
+Maintainer: Saksham Sharma <saksham0808@gmail.com>
+Standards-Version: 3.8.1
+Build-Depends: debhelper (>= 5), cdbs, dpatch, haskell-devscripts (>= 0.6.15+nmu1), ghc6, ghc6-prof
+Build-Depends-Indep: ghc6-doc, haddock, hscolour
+Homepage: http://hackage.haskell.org/cgi-bin/raaz/package/raaz
+
+Package: libghc6-raaz-dev
+Architecture: any
+Depends: , , 
+Suggests: libghc6-raaz-doc (= ), libghc6-raaz-prof (= )
+Description: A
+ This package provides a library for the Haskell programming language.
+ See http://www.haskell.org/ for more information on Haskell.
+ .
+ A
+
+Package: libghc6-raaz-prof
+Architecture: any
+Depends: libghc6-raaz-dev (= ), , , 
+Description: A; profiling libraries
+ This package provides a library for the Haskell programming language,
+ compiled for profiling.
+ See http://www.haskell.org/ for more information on Haskell.
+ .
+ A
+
+Package: libghc6-raaz-doc
+Section: doc
+Architecture: all
+Depends: 
+Recommends: ghc6-doc (>= 6.8.2)
+Suggests: libghc6-raaz-dev (= )
+Description: A; documentation
+ This package provides the documentation for a library for the Haskell
+ programming language.
+ See http://www.haskell.org/ for more information on Haskell.
+ .
+ A
